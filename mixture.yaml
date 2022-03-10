@@ -1,0 +1,33 @@
+---
+# Mixture of dictionaries and lists
+
+martin:
+  name: Martin John
+  job: DevOps Engineer
+  skill: 
+  - IaC
+  - Azure DevOps
+  - AWS DevOps
+  - Python Automation
+
+hubert:
+  name: Hubert Hunter
+  job: Developer
+  skill: 
+  - Python
+  - Java
+  - Javascript
+  - C#
+  - C++
+  - C
+  - PHP
+  - Ruby
+
+colin:
+  name: Colin Hunter
+  job: Program Manager
+  skill:
+  - Comminucation skills
+  - Leadership
+  - Teamwork
+  - Problem Solving

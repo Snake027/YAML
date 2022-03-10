@@ -1,0 +1,8 @@
+# Document 1
+---
+# An employee record
+martin:
+ name: Martin Developer
+ job: Developer
+ skill: Elite
+...

@@ -1,0 +1,8 @@
+---              # This is the root of the YAML data
+# lists
+
+- Apple
+- Banana
+- Melon
+- Orange
+...              # ... is a placeholder for the next line

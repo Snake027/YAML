@@ -1,0 +1,102 @@
+# Using sequences datatypes (They are nothing but simply a list of values)
+---
+names: !!seq
+ - Black Mamba
+ - Green Mamba
+ - Boomslang
+ - Rock Python
+ - Mozambique Spitting Cobra
+ - Indian Spectacled Cobra
+ - Golden Pit Viper
+...
+
+
+---
+# Same can also be written as
+name: !!seq [Black Mamba, Green Mamba, Boomslang, Rock Python, Mozambique Spitting Cobra, Indian Spectacled Cobra, Golden Pit Viper]
+...
+
+
+---
+# Sparse sequences
+-
+ - mango:
+    color:orange
+    taste:sweet
+ - banana:
+    color:yellow
+    taste:sweet
+...
+
+
+---
+# Maps : Key value pairs are called maps
+fruits: 
+  - mango: 
+     - color:orange
+     - taste:sweet
+  - banana: 
+     - color:yellow
+     - taste:sweet
+...
+
+
+---
+# Nested mapping: map within a map
+name: Sneh Chauhan 
+address:
+  society: Anandvan society
+  street: Harni Road
+  city: Vadodara
+  state: Gujarat
+  country: India
+Ph_No.: +91-9876543210
+...
+
+# Same can be written as
+name: Sneh Chauhan
+address: {society: Anandvan society, street: Harni Road, city: Vadodara, state: Gujarat, country: India}
+Ph_No.: +91-9876543210
+...
+
+
+---
+# Pairs : keys may have same values
+name: !!pairs
+   - first_name: Sneh
+   - first_name: Snake
+
+# Same as
+names: !!pairs [first_name: Sneh, first_name: Snake]
+...
+
+
+---
+# Set will allow you to have unique values
+names:
+  ? Sneh:Chauhan
+  ? Snake:Chauhan
+...
+
+
+---
+# Dictionary !!omap
+people: !!omap
+  - Sneh:
+      name: Sneh
+      age: 20
+  - Snake:
+      name: Snake
+      age: 21
+...
+
+
+---
+# Anchor tags
+likings: &likes
+fav fruit: mango
+fav food: pizza
+
+name: Sneh
+<<: *likes
+...

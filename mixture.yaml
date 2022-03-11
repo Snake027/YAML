@@ -1,5 +1,5 @@
 ---
-# Mixture of dictionaries and lists
+# Mixture of dictionaries and lists using Block format
 
 martin:
   name: Martin John
@@ -31,3 +31,4 @@ colin:
   - Leadership
   - Teamwork
   - Problem Solving
+...

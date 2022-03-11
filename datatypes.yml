@@ -1,0 +1,26 @@
+# Learning datatypes in YAML
+---
+num: 12
+number: 13.424
+name: "Sneh"
+booleanValue: No
+...
+
+# Specify the datatype of the data
+---
+integer: !!int 12
+float: !!float 23.444
+string: !!str "Sneh"
+boolean: !!bool false
+positiveInteger: !!int 12
+infinity: !!float .inf
+negativeInfinity: !!float -.inf
+notANumber: !!float .nan
+...
+
+---
+binaryNum: !!binary 0b1010
+octalnumber: !!int 012
+hexnumber: !!int 0x12
+...
+
